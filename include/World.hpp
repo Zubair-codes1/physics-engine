@@ -14,7 +14,7 @@ namespace physics {
         
         public:
             World() = default;
-            explicit World(Vector2 new_gravity) : gravity(gravity) {}
+            explicit World(Vector2 new_gravity) : gravity(new_gravity) {}
 
             void add_body(RigidBody* body) {
                 bodies.push_back(body);
